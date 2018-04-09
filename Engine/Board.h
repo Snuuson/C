@@ -8,7 +8,6 @@ class Board
 public:
 	Board(Graphics& gfx);
 	void DrawCell(const Location& loc, Color c);
-	void DrawCellSpecial(const Location& loc, Color c);
 	int GetGridWidth() const;
 	int GetGridHeight() const;
 	Location GetGridLocation() const;
