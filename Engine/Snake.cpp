@@ -125,7 +125,8 @@ bool Snake::IsInTile(const Location & target) const
 void Snake::SnakeReset()
 {
 	nSegments = 1;
-	segments[0].InitHead({ 2,2 });
+	segments[0].InitHead({ 10,10 });
+	
 }
 
 

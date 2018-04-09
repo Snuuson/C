@@ -11,13 +11,13 @@ public:
 	const Location& GetLocation() const;
 	bool rainbow = false;
 	int counter = 0;
-	Color c = Color(38, 84, 124);
+	
 
 
 private:
 	
 	Location loc;
-	
+	Color c = Color(38, 84, 124);
 	
 };
 

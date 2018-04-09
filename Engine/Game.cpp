@@ -28,7 +28,7 @@ Game::Game(MainWindow& wnd)
 	gfx(wnd),
 	brd(gfx),
 	rng(std::random_device()()),
-	snake({ 2,2 }),
+	snake({ 10,10 }),
 	goal(rng, brd, snake)
 {
 }
@@ -54,6 +54,7 @@ void Game::UpdateModel()
 	if (wnd.kbd.KeyIsPressed(VK_SPACE)) {
 		snake.SnakeReset();
 		gameIsOver = false;
+		delta_loc = { 0,0 };
 	}
 	if (!gameIsOver) {
 		if (wnd.kbd.KeyIsPressed(VK_UP)) {
