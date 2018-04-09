@@ -10,17 +10,30 @@ Board::Board(Graphics & gfx)
 {
 }
 
-void Board::DrawCell(const Location& loc, Color c)
+void Board::DrawCellSpecial(const Location& loc, Color c)
 {
-	/*assert(loc.x >= boardLocation.x);
+	assert(loc.x >= boardLocation.x);
 	assert(loc.x < width + boardLocation.x);
 
 	assert(loc.y >= boardLocation.y);
 	assert(loc.y < height + boardLocation.y);
-	*/
-	gfx.DrawRectDim(loc.x * dimension, loc.y * dimension, dimension, dimension, c);
+	
+	gfx.DrawRectSpecialDim(loc.x * dimension, loc.y * dimension, dimension, dimension, c);
 
 	
+
+}
+void Board::DrawCell(const Location& loc, Color c)
+{
+	assert(loc.x >= boardLocation.x);
+	assert(loc.x < width + boardLocation.x);
+
+	assert(loc.y >= boardLocation.y);
+	assert(loc.y < height + boardLocation.y);
+
+	gfx.DrawRectDim(loc.x * dimension, loc.y * dimension, dimension, dimension, c);
+
+
 
 }
 
