@@ -20,7 +20,7 @@
 ******************************************************************************************/
 #pragma once
 #include <string>
-//initasdasdasda
+//init
 class ChiliException
 {
 public:
