@@ -73,7 +73,7 @@ void Snake::Segment::Follow(const Segment& next)
 
 void Snake::Segment::Draw(Board& brd) 
 {
-	brd.DrawCellSpecial(loc,c);
+	brd.DrawCell(loc,c);
 }
 
 void Snake::Segment::MoveBy(const Location& delta_loc)
